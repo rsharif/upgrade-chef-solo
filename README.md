@@ -1,6 +1,7 @@
 To upgrade the chef solo version , use two provisioners like shown below. First provisioner upgrades the chef-solo version and second provisioner will then use the updgraded chef solo.
 ### Put this cookbook in your cookbooks path for vagrant, by default vagrant will search in cookbooks folder in the same directory as Vagrant file###
 
+```ruby
 Vagrant.configure("2") do |config|
 	config.vm.define :node_name do |node_name|
 	    node_name.vm.box = "centos6.3"
@@ -17,3 +18,4 @@ Vagrant.configure("2") do |config|
 		end
 	end	
 end
+```
